@@ -13,6 +13,7 @@ module SpreeFancy
 
     initializer :assets do |config|
       Rails.application.config.assets.precompile += %w( spree/fancy/print.css )
+      Rails.application.config.assets.precompile += %w( icons.svg icons.ttf icons.eot icons.woff )
     end
 
     def self.activate
